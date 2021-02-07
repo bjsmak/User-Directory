@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import API from '../utils/API';
-import Buttons from '../components/Buttons'
+import Buttons from '../components/Buttons';
 
 const MainTable = () => {
 
@@ -43,10 +43,10 @@ const MainTable = () => {
     }
 
     return (
-        <div >
+        <div style={{background:'#457b9d'}} >
 
-            <input onChange={ handleInputChange } value= {search} /> <Buttons handleSubmit={handleSubmit} />
-            <table className="container table table-hover text-center">
+            <input className="mt-5" onChange={ handleInputChange } value= {search} /> <Buttons handleSubmit={handleSubmit} />
+            <table className="container table table-hover text-center" style={{color: 'fff'}}>
             <thead>
                 <tr>
                     <th>Email</th>
